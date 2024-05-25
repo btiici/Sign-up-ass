@@ -31,15 +31,21 @@
         <h4>Try it free 7 days<span> then $20/mo. thereafter</span></h4>
         <form action="" id="form">
           <label for="firstName">
-            <input type="text" class="firstName" placeholder="First Name" />
+            <img src="./images/icon-error.svg" alt="" class="e-icon firstName-icon">
+            <input type="text" class="firstName" placeholder="First Name" /> 
           </label>
           <label for="lastName">
+            <img src="./images/icon-error.svg" alt="" class="e-icon lastName-icon">
             <input type="text" class="lastName" placeholder="Last Name" />
           </label>
           <label for="email">
+            <img src="./images/icon-error.svg" alt="" class="e-icon email-icon">
             <input type="email" class="email" placeholder="Email" />
           </label>
           <label for="password">
+            <img src="./images/icons8-closed-eye-24.png" alt="" class="close" onclick="togglePassword()">
+            <img src="./images/icons8-eye-48.png" alt="" class="open" onclick="togglePassword()">
+            <img src="./images/icon-error.svg" alt="" class="e-icon password-icon">
             <input type="password" class="password" placeholder="Password" />
           </label>
           <button id="button">Claim your free trial</button>
@@ -50,5 +56,7 @@
         </form>
       </div>
     </main>
+
+    <script src="index.js"></script>
   </body>
 </html>

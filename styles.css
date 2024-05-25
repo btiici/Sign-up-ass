@@ -77,13 +77,50 @@ input {
   display: block;
   width: 100%;
   padding: 1rem 1.5rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
   border: 1px solid var(--grayish-blue);
   border-radius: 0.5rem;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
+}
+
+label{
+  position: relative;
+}
+
+.e-icon{
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.close{
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.js-close{
+  display: none;
+}
+
+.open{
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  transform: translateY(-50%);
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+.js-icon{
+  display: block;
 }
 
 input.error {
@@ -121,4 +158,13 @@ small span {
   color: var(--red);
   font-weight: 600;
   cursor: pointer;
+}
+
+.errors{
+  color: red;
+  font-size: 10px;
+  text-align: end;
+  margin-bottom: 1.2rem;
+  font-style: italic;
+
 }
