@@ -122,3 +122,10 @@ function togglePassword() {
     unseePassword.style.display = 'inline';
   }
 }
+
+password.addEventListener('input', () => {
+  if (password.classList.contains('error')) {
+      unseePassword.style.display = 'inline';
+      passwordIcon.classList.remove('js-icon');
+  }
+});

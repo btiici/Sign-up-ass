@@ -103,6 +103,7 @@ label{
   right: 20px;
   top: 45%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .js-close{
@@ -117,6 +118,7 @@ label{
   display: none;
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 
 .js-icon{
@@ -167,4 +169,20 @@ small span {
   margin-bottom: 1.2rem;
   font-style: italic;
 
+}
+
+
+@media screen and (max-width: 400px) {
+  .e-icon{
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+  }
 }
